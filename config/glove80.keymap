@@ -136,8 +136,8 @@
     };
 
     // Home row mods
-    #define _F_SFT &hm_rpi LSHFT F  // Shift on index fingers
-    #define _J_SFT &hm_rpi RSHFT J
+    #define _F_SFT &hm LSHFT F  // Shift on index fingers
+    #define _J_SFT &hm RSHFT J
     #define _D_CMD &hm_rpi LGUI D   // Command on middle fingers
     #define _K_CMD &hm_rpi RGUI K
     #define _V_CTL &hm_rpi LCTRL V  // Control on index down
