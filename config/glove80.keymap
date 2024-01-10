@@ -177,7 +177,7 @@
             &kp TAB        &kp Q    &kp W       &kp E       &kp R       &kp T                                                                      &kp Y   &kp U   &kp I       &kp O       &kp P       &kp BSLH
             &kp ESC        &kp A    &kp LOPT      _D_CMD      _F_SFT      &kp G                                                                      &kp H   _J_SFT  _K_CMD    &kp ROPT      &kp SEMI    &kp SQT
             _HOME_SFT      &kp Z    &kp X       &kp C       _V_CTL       &kp B   &kp LGUI   &kp LCTRL   &layer_td  &kp RALT  &kp RGUI &kp RCTRL   &kp N  _M_CTL  &kp COMMA   &kp DOT     &kp FSLH     _PG_UP_SFT
-            &kp END       &kp GRAVE _MAGIC     &kp LEFT    &kp RIGHT           &kp BSPC    &kp DEL     &kp LSHFT   &kp RSHFT  &kp RET   &kp SPACE           &kp UP  &kp DOWN    &kp LBKT    &kp RBKT    &kp PG_DN
+            &kp END       &kp GRAVE &magic MAGIC 0     &kp LEFT    &kp RIGHT           &kp BSPC    &kp DEL     &kp LSHFT   &kp RSHFT  &kp RET   &kp SPACE           &kp UP  &kp DOWN    &kp LBKT    &kp RBKT    &kp PG_DN
             >;
         };
 
