@@ -148,6 +148,19 @@
     #define _S_OPT &hm_alt LALT S   // Option on ring finger
     #define _L_OPT &hm_alt RALT L
 
+    // Colemak home row mods
+    #define _CT_SFT &hm LSHFT T  // Shift on index fingers
+    #define _CN_SFT &hm RSHFT N
+    #define _HOME_SFT &hm LSHFT HOME  // Shift in traditional places
+    #define _PG_UP_SFT &hm RSHFT PG_UP
+    #define _CS_CMD &hm_rpi LGUI S   // Command on middle fingers
+    #define _CE_CMD &hm_rpi RGUI E
+    #define _CD_CTL &hm_rpi LCTRL D  // Control on index down
+    #define _CH_CTL &hm_rpi RCTRL H
+    #define _CR_OPT &hm_alt LALT R   // Option on ring finger
+    #define _CI_OPT &hm_alt RALT I
+
+
     // MacOS shortcuts
     #define _1PASS &kp LG(BSLH)      // 1Password
     #define _APEX  &kp LC(UP)        // App exposé
@@ -224,12 +237,12 @@
             // | MAGIC|  `  | LALT  | LEFT | RIGHT|      | BSPC  | DEL   | END  |  | PGDN  | RET   | SPACE  |      |  UP   | DOWN  |  [   |   ]   | LOWER|
 
             bindings = <
-            &kp F1           &kp F2    &kp F3     &kp F4   &kp F5                                                                                     &kp F6  &kp F7      &kp F8      &kp F9     &kp F10
-            &kp EQUAL        &kp N1    &kp N2     &kp N3   &kp N4    &kp N5                                                                   &kp N6  &kp N7  &kp N8      &kp N9      &kp N0     &kp MINUS
-            &kp TAB          &kp Q     &kp W      &kp F    &kp P     &kp B                                                                    &kp J   &kp L   &kp U       &kp Y       &kp SEMI   &kp BSLH
-            &kp ESC          &kp A     &kp R      &kp S    &kp T     &kp G                                                                    &kp M   &kp N   &kp E       &kp I       &kp O      &kp SQT
-            &kp LSHFT        &kp Z     &kp X      &kp C    &kp D     &kp V   &kp LGUI   &kp LCTRL  &kp HOME  &kp PG_UP &kp LALT  &kp RGUI     &kp K   &kp H   &kp COMMA   &kp DOT     &kp FSLH   &kp RSHFT 
-            &magic MAGIC CDH &kp GRAVE &kp CAPS   &kp LEFT &kp RIGHT         &kp BSPC   &kp DEL    &kp END   &kp PG_DN  &kp RET   &kp SPACE           &kp UP  &kp DOWN    &kp LBKT    &kp RBKT   &layer_td 
+            &kp F1           &kp F2    &kp F3     &kp F4     &kp F5                                                                                   &kp F6   &kp F7      &kp F8      &kp F9     &kp F10
+            &kp EQUAL        &kp N1    &kp N2     &kp N3     &kp N4    &kp N5                                                                 &kp N6  &kp N7   &kp N8      &kp N9      &kp N0     &kp MINUS
+            &kp TAB          &kp Q     &kp W      &kp F      &kp P     &kp B                                                                  &kp J   &kp L    &kp U       &kp Y       &kp SEMI   &kp BSLH
+            &kp ESC          &kp A     &kp R      _CS_CMD    _CT_SFT   &kp G                                                                  &kp M   _CN_SFT  _CE_CMD     &kp I       &kp O      &kp SQT
+            &kp LSHFT        &kp Z     &kp X      &kp C      _CD_CTL   &kp V   &kp LGUI   &kp LCTRL  &kp HOME  &kp PG_UP &kp LALT  &kp RGUI    &kp K  _CH_CTL  &kp COMMA   &kp DOT     &kp FSLH   &kp RSHFT 
+            &magic MAGIC CDH &kp GRAVE &kp CAPS   &kp LEFT   &kp RIGHT         &kp BSPC   &kp DEL    &kp END   &kp PG_DN  &kp RET   &kp SPACE         &kp UP   &kp DOWN    &kp LBKT    &kp RBKT   &layer_td 
             >;
         };
     };
